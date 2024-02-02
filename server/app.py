@@ -39,7 +39,7 @@ class Plants(Resource):
 
         response = make_response(jsonify(new_plant.to_dict()), 201)
         return response
-
+    
 
 api.add_resource(Plants, '/plants')
 
